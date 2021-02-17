@@ -264,9 +264,6 @@ footer {
   #section1 {
     margin-top: 60px;
   }
-  #navbar {
-    background: var(--color4);
-  }
 }
 
 @media (min-width: 992px) {

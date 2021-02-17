@@ -29,7 +29,7 @@
         $('#go_top_page').fadeOut(1000)
         $('#go_top_page').css({ 'animation-iteration-count': 'none' })
       }
-      if (nowloc <= 200) {
+      if (nowloc <= 99) {
         $('#navbar').css({
           background: 'transparent'
         })
