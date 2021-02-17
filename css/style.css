@@ -278,9 +278,9 @@ footer {
   }
 
   #type-js {
-    top: 25%;
+    top: 22%;
     left: 50%;
-    transform: translate(-50%, -25%);
+    transform: translate(-50%, -22%);
     font-size: 28px;
   }
 
