@@ -1,7 +1,7 @@
 :root {
   /* 主題色 */
   --color1: #012970 !important;
-  --color2: #54617a !important;
+  --color2: #ffc107 !important;
   --color3: #6c757d !important;
   --color4: rgb(51, 51, 51) !important;
   --color5: #c4000d !important;
@@ -49,7 +49,7 @@ body {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: var(--color5);
+  color: var(--color2);
 }
 
 .card {
@@ -63,16 +63,20 @@ body {
   box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.3);
 }
 
-#type-js {
-  display: none;
-}
-
 #section1,
 #section2,
 #section3 {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+}
+
+#header {
+  width: 100%;
+  height: 90vh;
+  background: url(../images/main-bg.jpg) no-repeat center/cover;
+  /* opacity: 0.5; */
+  filter: grayscale(1);
 }
 
 /* Introduce ---------------------------------------- */
@@ -118,9 +122,30 @@ body {
   border-radius: 0.25rem;
 }
 
+.about-text {
+  margin-bottom: 30px;
+}
+
+#type-js {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .about-me {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 18px;
+}
+
+.about-icon {
+  margin-top: 20px;
 }
 /* experience */
 
@@ -192,7 +217,7 @@ body {
   color: #fff;
 }
 #portfolio .card-title {
-  color: var(--color5);
+  color: var(--color2);
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -243,20 +268,6 @@ footer {
 }
 
 @media (min-width: 992px) {
-  #type-js {
-    display: block;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-40%, -50%);
-    z-index: 1;
-    color: rgb(255, 255, 255);
-    font-size: 60px;
-    text-shadow: 1px 1px #eeff00;
-    /* text-align: center; */
-    /* background: rgba(255, 255, 255, 0.664); */
-  }
-
   .photo {
     width: 250px;
     height: 250px;
@@ -264,6 +275,13 @@ footer {
 
   .skill-text {
     text-align: left;
+  }
+
+  #type-js {
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    font-size: 28px;
   }
 
   /* 回到頂端 */
