@@ -179,7 +179,7 @@ body {
 }
 
 #skill .card:hover {
-  background: rgba(255, 193, 7, 0.8);
+  background: rgba(221, 221, 221, 0.8);
 }
 
 #skill .card-text p {
