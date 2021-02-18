@@ -19,6 +19,7 @@
 
     $('#go_top_page').css({ display: 'none' })
     let nowloc = 0
+
     $(window).on('scroll', function () {
       nowloc = $(window).scrollTop()
       if (nowloc > 250) {
@@ -29,16 +30,18 @@
         $('#go_top_page').fadeOut(1000)
         $('#go_top_page').css({ 'animation-iteration-count': 'none' })
       }
-      if ($(window).width() > 576 && nowloc <= 99) {
-        $('#navbar').css({
-          background: 'transparent'
-        })
-        $('.navbar-brand').css({
-          color: 'white'
-        })
-      } else {
-        $('#navbar').css({
-          background: 'var(--color4)'
-        })
-      }
+      $( window ).resize(function() {
+        if ($(window).width() > 576 && nowloc <= 99) {
+          $('#navbar').css({
+            background: 'transparent'
+          })
+          $('.navbar-brand').css({
+            color: 'white'
+          })
+        } else {
+          $('#navbar').css({
+            background: 'var(--color4)'
+          })
+        }
+      });
     })
