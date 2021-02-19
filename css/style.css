@@ -266,12 +266,8 @@ footer {
 }
 
 @media (max-width: 576px) {
-  #section1 {
-    width: 100%;
-    background: url(../images/main-bg.jpg) no-repeat center/cover;
-    background-attachment: fixed;
+  #introduce {
     margin-top: 56px;
-    display: flex;
   }
 }
 
@@ -282,12 +278,6 @@ footer {
     background: url(../images/main-bg.jpg) no-repeat center/cover;
     background-attachment: fixed;
     display: flex;
-  }
-
-  .content {
-    left: 2%;
-    position: absolute;
-    height: 385px;
   }
 
   .pr0 {
