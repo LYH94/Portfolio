@@ -217,6 +217,7 @@ body {
   background: var(--color4);
   color: #fff;
 }
+
 #portfolio .card-title {
   color: var(--color2);
   font-size: 1.5rem;
@@ -224,17 +225,70 @@ body {
 }
 
 .zoom {
-  /* position: relative; */
   width: 100%;
   overflow: hidden;
 }
 
-.zoom img {
-  transition: transform 0.2s; /* Animation */
+#portfolio .view {
+  position: relative;
+  overflow: hidden;
 }
 
-.zoom img:hover {
-  transform: scale(1.1);
+#portfolio .view img {
+  transition: 0.5s;
+}
+
+#portfolio .text p {
+  display: none;
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#portfolio .text a {
+  display: none;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+#portfolio .view:hover img {
+  transform: scale(1.2);
+}
+
+#portfolio .view:hover .text {
+  background-color: var(--black75);
+}
+
+#portfolio .view:hover .text p,
+#portfolio .view:hover .text a {
+  display: block;
+}
+
+#portfolio .view .text {
+  color: white;
+  padding: 0 var(--s3);
+
+  /* 文字在上層 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+}
+
+.link {
+  position: absolute;
+  top: 50%;
+  /* visibility: hidden; */
+}
+
+.link::hover {
+  /* visibility: visible; */
 }
 
 footer {
