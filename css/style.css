@@ -175,6 +175,7 @@ body {
 /* Skill ---------------------------------------- */
 
 #skill {
+  padding: 6rem;
   overflow: hidden;
 }
 
@@ -326,6 +327,10 @@ footer {
 }
 
 @media (min-width: 992px) {
+  #skill {
+    padding: 0;
+  }
+
   #section1 {
     width: 100%;
     height: 100vh;
